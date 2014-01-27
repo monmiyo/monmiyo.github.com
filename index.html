@@ -7,7 +7,24 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<script type="text/javascript" src="js/kakao.link.js"></script>
-  <link rel="stylesheet" href="common.css"/>
+	<script type="text/javascript">
+	function executeURLLink()
+	{
+	    /* 
+	    msg, url, appid, appname은 실제 서비스에서 사용하는 정보로 업데이트되어야 합니다. 
+	    */
+	    kakao.link("talk").send({
+	        msg : "[이한모♡김민영 결혼식에 초대합니다]\n1. 일시\n - 3월 2일 pm 12시 30분\n 2. 장소\n - 오나르바이오스티엄\n봄홀\n바쁘시더라도 꼭 오셔서\n축하해주세요.(하트)",
+	        url : "http://monmiyo.github.io",
+	        appid : "m.kakao.com",
+	        appver : "2.0",
+	        appname : "카카오",
+	        type : "link"
+	    });
+	
+	}
+	</script>
+	<link rel="stylesheet" href="common.css"/>
 </head>
 <body>
 	<article>
@@ -29,7 +46,8 @@
 				<a href="http://map.naver.com/?dlevel=12&pinType=site&pinId=12987354&x=127.0396770&y=37.5088106&enc=b64" class="myButton">네이버 지도로 확인하기</a>
 				<br><br>
 				<a href="http://map.naver.com/?dlevel=12&pinType=site&pinId=12987354&x=127.0396770&y=37.5088106&enc=b64" class="myButton">네이버 지도로 확인하기</a>
-				<a href="javascript:kakaoSend('[이한모♡김민영 결혼식에 초대합니다]\n1. 일시\n - 3월 2일 pm 12시 30분\n 2. 장소\n - 오나르바이오스티엄\n봄홀\n바쁘시더라도 꼭 오셔서\n축하해주세요.(하트)\n\n<스마트폰 청첩장보기>\n아래를 눌러주세요 (윙크)\n','http://monmiyo.github.io/');" onfocus="blur();" class="myButton"><span>카카오톡</span></a>
+				<br><br>
+				<a href="#" onclick="javascript:executeURLLink()" class="myButton"><span>카카오톡</span></a>
 			</div>
         </div>
 	</article>
