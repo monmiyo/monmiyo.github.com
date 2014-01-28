@@ -128,11 +128,11 @@ input, select {
 	padding:40px 0 40px 0
 }
 .myButton {
-	-moz-box-shadow: 0px 5px 0px 0px #c0d2e0;
-	-webkit-box-shadow: 0px 5px 0px 0px #c0d2e0;
-	box-shadow: 0px 5px 0px 0px #c0d2e0;
-	background-color:#a3b5bf;
+	background-color:#568799;
 	width:70%;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
 	height:100%;
 	display:block;
 	cursor:pointer;
@@ -145,7 +145,7 @@ input, select {
 	text-shadow:0px 1px 0px #7c8284;
 }
 .myButton:hover {
-	background-color:#9eacba;
+	background-color:#208291;
 }
 .myButton:active {
 	position:relative;
